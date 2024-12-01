@@ -1,0 +1,39 @@
+.reviews {
+	padding-bottom: 1em;
+}
+.reviews__title {
+	color: #ea4959;
+	font-size: 1.5em;
+	padding-bottom: 0.5em;
+}
+
+.reviews__list-title {
+	text-align: left;
+	font-size: large;
+	font-weight: 700;
+}
+.reviews__list-text {
+	font-size: large;
+	font-weight: 400;
+}
+.reviews__stars-container {
+	display: flex;
+	gap: 0.5em;
+	padding-bottom: 1.5em;
+	.reviews__list-stars {
+		font-size: larger;
+		color: rgb(236, 208, 72);
+		-webkit-text-stroke: 0.8px black;
+	}
+
+	.reviews__list-value {
+		font-size: large;
+		font-weight: 600;
+	}
+}
+
+.reviews__btn {
+	border: 1px solid black;
+	height: 1.8em;
+	border-radius: 3px;
+}

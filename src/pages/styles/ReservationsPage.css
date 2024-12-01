@@ -1,0 +1,27 @@
+.reservations {
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 8em 1.5em;
+	position: relative;
+}
+
+.reservations__title {
+	font-size: 1.8em;
+	color: #b31e2d;
+	position: absolute;
+	top: 5em;
+}
+.reservations__container {
+	flex-wrap: wrap;
+	gap: 2em;
+	margin-top: 4em;
+}
+.link {
+	color: #13123b;
+	text-align: center;
+	font-size: 1.2em;
+	transition: 0.5s ease;
+	&:hover {
+		color: rgb(207, 181, 31);
+	}
+}

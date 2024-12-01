@@ -1,0 +1,52 @@
+.details {
+	padding: 8em 2em;
+}
+
+.details__title-container {
+	text-align: center;
+	.details__title {
+		font-size: 2em;
+		color: #ea4959;
+	}
+	.details__stars {
+		font-size: larger;
+		color: rgb(236, 208, 72);
+		-webkit-text-stroke: 0.8px rgb(2, 4, 20);
+	}
+	.details__rating {
+		font-size: larger;
+		font-weight: 600;
+	}
+}
+
+.details__location-container {
+	flex-wrap: wrap;
+}
+.details__city {
+	padding-top: 1em;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-align: center;
+	color: #ea4959;
+}
+
+.details__address {
+	padding-bottom: 1.5em;
+	font-size: 1;
+	font-weight: 500;
+	.location__logo {
+		font-weight: 900;
+		font-size: 1em;
+		padding-right: 0.2em;
+		color: #ea4959;
+	}
+}
+
+.details__description {
+	padding-bottom: 1.5em;
+	font-size: 1.1em;
+}
+
+.details__reservations {
+	padding-bottom: 1.5em;
+}

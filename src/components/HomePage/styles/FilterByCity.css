@@ -1,0 +1,21 @@
+.filtercity {
+	gap: 0.5em;
+}
+
+.filtercity__title {
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.filtercity__list-item {
+	font-size: 1.2em;
+	cursor: pointer;
+	padding: 0.5em;
+	transition: scale 0.5s ease;
+	&:hover {
+		scale: 1.01;
+		background-color: #fa404099;
+		color: aliceblue;
+		font-weight: 700;
+	}
+}

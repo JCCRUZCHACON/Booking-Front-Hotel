@@ -1,0 +1,62 @@
+.hotel {
+	background-color: var(--primary-color);
+	width: 100%;
+	max-width: 20em;
+	border-radius: 1.1em;
+	overflow: hidden;
+	cursor: pointer;
+	box-shadow: 0.5em 0.5em 0.7em #0002;
+	transition: scale 0.5s ease;
+	&:hover {
+		scale: 1.02;
+	}
+}
+
+.hotel__image {
+	width: 100%;
+	display: block;
+	aspect-ratio: 1.3;
+	object-fit: cover;
+}
+
+.hotel__body {
+	padding: 1.2em 1em 1.5em;
+	.hotel__name {
+		height: 2.5em;
+		margin-bottom: 0.5em;
+	}
+	.hotel__rating {
+		justify-content: start;
+		gap: 0.5em;
+		color: rgb(236, 208, 72);
+		-webkit-text-stroke: 0.8px black;
+		.hotel__rating-value {
+			-webkit-text-stroke: 0.5px var(--text-color);
+			color: var(--text-color);
+			font-size: 0.8em;
+			font-weight: 300;
+		}
+	}
+	.hotel__city {
+		font-size: 0.8em;
+		font-weight: 400;
+		margin-bottom: 0.5em;
+	}
+	.hotel__price {
+		margin-bottom: 0.5em;
+	}
+	.hotel__btn {
+		display: block;
+		margin: 0 auto;
+		padding: 0.6em 1.5em;
+		border-radius: 0.8em;
+		background-color: #ea4959;
+		color: #fff;
+		font-weight: 700;
+		filter: grayscale(0.2);
+		transition: filter 0.5s ease;
+		&:hover {
+			filter: grayscale(0);
+		}
+	}
+}

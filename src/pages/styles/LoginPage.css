@@ -1,0 +1,82 @@
+.login {
+	min-height: 100vh;
+	flex-direction: column;
+	padding: 8em 1.5em;
+}
+
+.user__logo-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.users__logo {
+		width: 15em;
+	}
+}
+
+.user__welcome {
+	font-size: 2em;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+.user__name {
+	font-weight: 500;
+	color: #fa4040;
+	text-transform: capitalize;
+}
+
+.user__btn {
+	color: black;
+	display: block;
+	margin: 0 auto;
+	padding: 0.5em 1.8em;
+	border: 1px solid #fa4040;
+	background-color: #fff;
+	border-radius: 0.8em;
+	font-weight: 600;
+	font-size: 1.2em;
+	transition: all 0.5s ease;
+	&:hover {
+		background-color: #fa4040;
+		color: #fff;
+	}
+}
+
+.user__logo {
+	font-size: 10em;
+	margin: 0 auto;
+}
+
+.user__form {
+	flex-direction: column;
+	gap: 0.8em;
+}
+
+.user__form-field {
+	gap: 0.4em;
+	.user__form-label {
+		font-size: 1rem;
+		font-weight: 500;
+		padding-left: 1em;
+	}
+
+	.user__form-input {
+		color: black;
+		background-color: white;
+		padding: 0.5em 1em;
+		border: 1px solid #0003;
+		font-size: 1em;
+		font-weight: 300;
+	}
+}
+.user__btn-login {
+	background-color: #fa4040;
+	color: #fff;
+	filter: brightness(0.9);
+	transition: filter 0.5s ease;
+	&:hover {
+		filter: brightness(1);
+	}
+}

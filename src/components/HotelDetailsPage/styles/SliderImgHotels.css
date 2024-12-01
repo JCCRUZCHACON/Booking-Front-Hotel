@@ -1,0 +1,51 @@
+.slider {
+	position: relative;
+	width: max-content;
+	flex-wrap: wrap;
+}
+
+.slider__btn {
+	position: relative;
+	z-index: 1;
+	top: 45%;
+	background-color: #ea4959;
+	color: white;
+	padding: 0.2em;
+	border-radius: 50%;
+	font-size: 2em;
+	cursor: pointer;
+	filter: grayscale(0.3);
+	transition: filter 0.5s ease;
+	&:hover {
+		filter: none;
+	}
+}
+
+.slider__btn-preview {
+	left: 1.6em;
+}
+
+.slider__btn-next {
+	right: 1.6em;
+}
+
+.slider__body {
+	max-width: 35em;
+	aspect-ratio: 1.6;
+	overflow: hidden;
+}
+
+.slider__container {
+	transition: transform 0.5s ease;
+
+	.slider__img-container {
+		padding: 1.5em;
+		width: 100%;
+
+		.slider__img {
+			width: inherit;
+			aspect-ratio: 1.7;
+			object-fit: contain;
+		}
+	}
+}
