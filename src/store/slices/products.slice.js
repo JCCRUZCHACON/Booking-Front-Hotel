@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 export const productsSlice = createSlice({
+	baseUrl: process.env.REACT_APP_API_URL,
 	name: 'products',
 	initialState: null,
 	reducers: {
