@@ -52,14 +52,14 @@ const useAuth = () => {
             confirmButtonText: "Reintentar",
             confirmButtonColor: "#F44336", // Rojo profesional
           });
-        // } else {
-        //   Swal.fire({
-        //     title: "Error en el servidor",
-        //     text: "Hubo un problema con el inicio de sesión. Por favor, intenta más tarde.",
-        //     icon: "error",
-        //     confirmButtonText: "Cerrar",
-        //     confirmButtonColor: "#F44336",
-        //   });
+        } else {
+          Swal.fire({
+            title: "Error en el servidor",
+            text: "Hubo un problema con el inicio de sesión. Por favor, intenta más tarde.",
+            icon: "error",
+            confirmButtonText: "Cerrar",
+            confirmButtonColor: "#F44336",
+          });
         }
       })
       .finally(() => {

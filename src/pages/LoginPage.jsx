@@ -137,7 +137,6 @@ const LoginPage = () => {
 							/>
 						</label>
 
-
 						<label className="user__form-field grid-container">
 							<span className="user__form-label">Password</span>
 							<input
@@ -146,13 +145,9 @@ const LoginPage = () => {
 								{...register('password', { required: true })}
 							/>
 						</label>
-						
 
 						<button className="user__btn user__btn-login ">Submit</button>
 					</form>
-					
-					{/* {error && <div className="error-message">{error}</div>} */}
-
 
 				</div>
 			)}
