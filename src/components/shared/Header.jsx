@@ -17,15 +17,14 @@ const Header = () => {
 	return (
 		<header className="header">
 			<DarkMode />
-			<h1 onClick={closeMenu} className="header__logo">
-				<Link to="/">
-					HOTELS
-					{/* <span className="header__hotels"></span> */}
-				</Link>
-			</h1>
 			<div onClick={handleMenu} className="header__menu">
 				<i className="bx bx-menu"></i>
 			</div>
+			<h1 onClick={closeMenu} className="header__logo">
+				<Link to="/">
+					HOTELS
+				</Link>
+			</h1>
 
 			<nav className={`header__nav ${isOpenMenu || 'nav__close'}`}>
 				<ul className="header__list">

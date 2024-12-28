@@ -24,7 +24,7 @@
 	position: relative;
 	top: 0.2em;
 	cursor: pointer;
-	font-size: 2rem;
+	font-size: 1rem;
 	@media (width>760px) {
 		& {
 			display: none;
