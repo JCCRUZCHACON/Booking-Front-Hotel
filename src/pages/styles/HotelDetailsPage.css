@@ -52,9 +52,11 @@
 }
 
 .login__user {
-	background-color: blue;
+	background-color: rgb(128, 192, 182);
 	color: white;
 	padding: 0.3em;
-	border-radius: 1em;
 	cursor: pointer;
+	border-radius: 20px;
+	width: 50%
+	
 }
