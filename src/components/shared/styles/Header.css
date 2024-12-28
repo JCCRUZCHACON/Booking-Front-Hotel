@@ -52,7 +52,7 @@
 .header__item {
 	border-radius: 5px;
 	background-color: lightgreen;
-	padding: 5px;
+	padding: 2px;
 }
 
 .header__list {
@@ -63,7 +63,7 @@
 	font-size: 1rem;
 	width: 7em;
 	margin: 0 solid black;
-	gap: 2em;
+	gap: 1em;
 	@media (width>760px) {
 		& {
 			flex-direction: row;
