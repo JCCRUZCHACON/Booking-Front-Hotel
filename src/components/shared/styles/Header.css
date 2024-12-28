@@ -51,8 +51,8 @@
 
 .header__item {
 	border-radius: 20px;
-	background-color: rgb(220, 235, 235);
-	padding: 10px;
+	background-color: lightgreen;
+	padding: 7px;
 }
 
 .header__list {
@@ -62,7 +62,7 @@
 	flex-direction: column;
 	font-size: 1rem;
 	width: 7em;
-	margin: 0 solid;
+	margin: 0 solid black;
 	gap: 1em;
 	@media (width>760px) {
 		& {
