@@ -54,7 +54,7 @@
 .login__user {
 	background-color: rgb(128, 192, 182);
 	color: white;
-	padding: 0.3em;
+	padding: 0.5em;
 	cursor: pointer;
 	border-radius: 10px;
 	width: 50px;
