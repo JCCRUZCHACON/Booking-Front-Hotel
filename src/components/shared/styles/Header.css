@@ -51,8 +51,8 @@
 
 .header__item {
 	background-color: lightgreen;
-	padding: 1px;
-	border: 1px;
+	padding: 2px;
+	border-radius: 1px;
 }
 
 .header__list {
