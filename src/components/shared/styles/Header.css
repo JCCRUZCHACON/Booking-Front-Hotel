@@ -51,9 +51,9 @@
 
 .header__item {
 	border-radius: 20px;
-	width: 30px;
+	width: 40px;
 	background-color: lightgreen;
-	padding: 5px;
+	padding: 6px;
 }
 
 .header__list {
