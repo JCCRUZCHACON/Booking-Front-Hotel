@@ -12,7 +12,7 @@ const ReservationsPage = () => {
   const [formIsOpen, setFormIsOpen] = useState(false);
 
   useEffect(() => {
-    const url = "https://booking-app-pad5.onrender.com/api/v1/bookings";
+    const url = "https://booking-app-lmn3.onrender.com/api/v1/bookings";
     getReservations(url, true);
   }, []);
 

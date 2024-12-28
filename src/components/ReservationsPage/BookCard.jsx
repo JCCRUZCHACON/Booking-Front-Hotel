@@ -23,7 +23,7 @@ const BookCard = ({
       color: "var(--text-color)",
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `https://booking-app-pad5.onrender.com/api/v1/bookings/${book.id}`;
+        const url = `https://booking-app-lmn3.onrender.com/api/v1/bookings/${book.id}`;
         deleteReservation(url, book.id, true);
 
         Swal.fire({
@@ -45,20 +45,22 @@ const BookCard = ({
 
   return (
     <article className="reservation flex-container">
-      {/* <header className="reservation__header">
-				<img className="reservation__img" src={book.hotel.images[0].url} alt={book.hotel.name} />
-			</header> */}
+      <header className="reservation__header">
+        <img
+          className="reservation__image"
+          src={book.hotel.images[0].url}
+          alt={book.hotel.name}
+        />
+      </header>
       <section className="reservation__body">
         <h3 className="reservation__name">{book.hotel.name}</h3>
-        {/* <div className="reservation__city">
-					{book.hotel.city.name}, {book.hotel.city.country}
-				</div> */}
-        <span className="reservation__review-container">
-          Rate and comment the service ...
-          <p onClick={handleReview} className="reservation__review">
-            Click here!
-          </p>
-        </span>
+        <div className="reservation__city">
+          {book.hotel.city.name}, {book.hotel.city.country}
+        </div>
+        <p onClick={handleReview} className="reservation__review">
+          Rate and comment the service ... Click here!
+        </p>
+
         <ul className="reservation__list">
           <li className="reservation__list-item flex-container">
             <span className="reservation__list-label">Reservations Days</span>

@@ -18,7 +18,7 @@ function App() {
 				<Route path="/register" element={<RegisterPage />} />
 				<Route path="/login" element={<LoginPage />} />
 				<Route element={<ProtectedRoutes />}>
-					<Route path="/reservations" element={<ReservationsPage />} />
+				<Route path="/reservations" element={<ReservationsPage />} />
 				</Route>
 			</Routes>
 		</div>

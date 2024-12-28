@@ -4,7 +4,6 @@
 	flex-wrap: wrap;
 	border-radius: 1.1em;
 	overflow: hidden;
-
 	box-shadow: 0.5em 0.5em 0.7em #0002;
 	transition: scale 0.5s ease;
 	&:hover {
@@ -14,7 +13,7 @@
 
 .reservation__header {
 	flex: 1 1 20em;
-	.reservation__img {
+	.reservation__image {
 		width: 100%;
 		display: block;
 		aspect-ratio: 1.3;
@@ -30,13 +29,16 @@
 		margin-bottom: 0.5em;
 	}
 
-	.reservation__city {
-		font-size: 1.1em;
-		font-weight: 600;
+	/* .reservation__city, */
+	.reservation__review {
+		font-size: 0.8em;
+		font-weight: 400;
 		margin-bottom: 0.5em;
+		cursor: pointer;
+		color: #fa4040;
 	}
 
-	.reservation__review-container {
+	/* .reservation__review-container {
 		display: flex;
 		font-size: 1em;
 		.reservation__review {
@@ -50,7 +52,7 @@
 				color: gold;
 			}
 		}
-	}
+	} */
 
 	.reservation__list-item {
 		justify-content: space-between;

@@ -16,7 +16,7 @@ const HotelDetailsPage = () => {
   const [hotel, getHotel, loading] = useFetch();
 
   useEffect(() => {
-    const url = `https://booking-app-pad5.onrender.com/api/v1/hotels/${id}`;
+    const url = `https://booking-app-lmn3.onrender.com/api/v1/hotels/${id}`;
     getHotel(url);
   }, [id]);
 

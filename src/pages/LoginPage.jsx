@@ -11,25 +11,30 @@ const LoginPage = () => {
 	const [userLogged, setUserLogged] = useState();
 	const [showLoader, setShowLoader] = useState(true);
 	const { handleSubmit, reset, register } = useForm();
-	const { loginUser } = useAuth();
+	const { loginUser, isLoading, error } = useAuth(); // Agregamos isLoading y error
 	const navigate = useNavigate();
 
 	const submit = (data) => {
 		loginUser(data);
-		reset({
-			email: '',
-			password: '',
-		});
-		navigate('/');
-		Swal.fire({
-			title: 'Logged Successfully',
-			text: '',
-			icon: 'success',
-			confirmButtonColor: '#fa4040',
-			background: 'var(--primary-color)',
-			color: 'var(--text-color)',
-		});
-	};
+		if (!error) {
+			// Si no hay error, realiza las siguientes acciones
+			reset({
+			  email: '',
+			  password: '',
+			});
+		
+			navigate('/'); // Navega solo si el login es exitoso
+		
+			// Swal.fire({
+			//   title: 'Logged Successfully',
+			//   text: '',
+			//   icon: 'success',
+			//   confirmButtonColor: '#fa4040',
+			//   background: 'var(--primary-color)',
+			//   color: 'var(--text-color)',
+			// });
+		  }
+		};
 
 	useEffect(() => {
 		const userFromLocalStorage = localStorage.getItem('userLogged');
@@ -43,7 +48,23 @@ const LoginPage = () => {
 		}, 3000);
 
 		return () => clearTimeout(timeout);
+		
 	}, []);
+
+	// useEffect(() => {
+	// 	if (error) {
+	// 	  Swal.fire({
+	// 		title: 'Login Failed!',
+	// 		text: error,
+	// 		icon: 'error',
+	// 		confirmButtonColor: '#fa4040',
+	// 		background: 'var(--primary-color)',
+	// 		color: 'var(--text-color)',
+	// 	  });
+	// 	}
+	//   }, [error]);
+	
+	  
 
 	const handleDeleteLocalStorage = () => {
 		Swal.fire({
@@ -72,6 +93,7 @@ const LoginPage = () => {
 			}
 		});
 	};
+
 
 	return (
 		<section className="login flex-container">
@@ -106,24 +128,32 @@ const LoginPage = () => {
 						<h2 className="user__name">Login User</h2>
 
 						<label className="user__form-field grid-container">
-							<span className="user__form-label">Email</span>
-							<input
+							
+								<span className="user__form-label">Email</span>
+								<input
 								className="user__form-input"
 								type="email"
-								{...register('email')}
+								{...register('email', { required: true })}
 							/>
 						</label>
+
+
 						<label className="user__form-field grid-container">
 							<span className="user__form-label">Password</span>
 							<input
 								className="user__form-input"
 								type="password"
-								{...register('password')}
+								{...register('password', { required: true })}
 							/>
 						</label>
+						
 
 						<button className="user__btn user__btn-login ">Submit</button>
 					</form>
+					
+					{/* {error && <div className="error-message">{error}</div>} */}
+
+
 				</div>
 			)}
 		</section>
