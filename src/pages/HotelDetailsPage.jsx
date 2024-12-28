@@ -56,7 +56,9 @@ const HotelDetailsPage = () => {
             ) : (
               <p>
                 If you want to make a reservation, please{" "}
-                <Link className="login" to={"/login"}>Login</Link>
+                <div className="login__user">
+                <Link to={"/login"}>Login</Link>
+                </div>
               </p>
             )}
           </section>
