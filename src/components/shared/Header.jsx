@@ -29,7 +29,7 @@ const Header = () => {
 			<nav className={`header__nav ${isOpenMenu || 'nav__close'}`}>
 				<ul className="header__list">
 					<li onClick={closeMenu} className="header__item">
-						<Link to='reservations'>Reservations</Link>
+						<Link to='reservations'>Reservation</Link>
 					</li>
 					<li onClick={closeMenu} className="header__item">
 						<Link to="/register">Register</Link>
