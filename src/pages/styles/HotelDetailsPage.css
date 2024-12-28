@@ -50,3 +50,11 @@
 .details__reservations {
 	padding-bottom: 1.5em;
 }
+
+.login {
+	background-color: blue;
+	color: white;
+	padding: 1em;
+	border-radius: 1em;
+	cursor: pointer;
+}
