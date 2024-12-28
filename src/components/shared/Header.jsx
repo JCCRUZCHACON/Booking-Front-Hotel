@@ -22,7 +22,9 @@ const Header = () => {
 					HOTELS
 				</Link>
 			</h1>
-			
+			<div onClick={handleMenu} className="header__menu">
+				<i className="bx bx-menu"></i>
+			</div>
 			
 			<nav className={`header__nav ${isOpenMenu || 'nav__close'}`}>
 				<ul className="header__list">
@@ -34,9 +36,6 @@ const Header = () => {
 					</li>
 					<li onClick={closeMenu} className="header__item">
 						<Link to="/login">Login</Link>
-					</li>
-					<li onClick={handleMenu} className="header__menu">
-					<i className="bx bx-menu"></i>
 					</li>
 				</ul>
 			</nav>
