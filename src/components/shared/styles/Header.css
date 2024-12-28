@@ -50,9 +50,9 @@
 }
 
 .header__item {
-	border-radius: 10px;
+	border-radius: 5px;
 	background-color: lightgreen;
-	padding: 10px;
+	padding: 5px;
 }
 
 .header__list {
