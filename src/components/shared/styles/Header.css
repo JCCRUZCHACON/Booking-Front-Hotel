@@ -51,6 +51,7 @@
 
 .header__item {
 	border-radius: 20px;
+	background-color: aqua;
 }
 
 .header__list {
