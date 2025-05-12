@@ -7,7 +7,7 @@ const Reviews = ({ hotelId }) => {
   const [visibleComments, setVisibleComments] = useState(5);
   const [reviewsHotel, getReviewsHotel] = useFetch();
   useEffect(() => {
-    const url = `https://booking-app-lmn3.onrender.com/api/v1/reviews?hotelId=${hotelId}`;
+    const url = `${import.meta.env.VITE_API_URL}/reviews?hotelId=${hotelId}`;
     getReviewsHotel(url, true);
   }, [hotelId]);
 

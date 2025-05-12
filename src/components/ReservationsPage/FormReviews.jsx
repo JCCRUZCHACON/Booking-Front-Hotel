@@ -15,7 +15,7 @@ const FormReviews = ({
   const [, , createReview] = useCrud();
 
   const submit = (data) => {
-    const url = "https://booking-app-lmn3.onrender.com/api/v1/reviews";
+    const url = `${import.meta.env.VITE_API_URL}/reviews`;
     const reviewData = { ...data, hotelId: bookSelected?.hotelId };
 
     createReview(url, reviewData, true);

@@ -7,7 +7,7 @@ const OtherHotels = ({ city, id }) => {
   const [hotelsByCity, getHotelsByCity] = useFetch();
   useEffect(() => {
     if (city) {
-      const url = `https://booking-app-lmn3.onrender.com/api/v1/hotels?cityId=${city?.id}`;
+      const url = `${import.meta.env.VITE_API_URL}/hotels?cityId=${city?.id}`;
       getHotelsByCity(url);
     } else {
     }

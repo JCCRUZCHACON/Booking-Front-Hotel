@@ -7,7 +7,7 @@ const useAuth = () => {
   const [error, setError] = useState(null); // Para almacenar el mensaje de error
   //Register
   const createUser = (data) => {
-    const url = "https://booking-app-lmn3.onrender.com/api/v1/users";
+    const url = `${import.meta.env.VITE_API_URL}/users`;
 
     axios
       .post(url, data)
@@ -20,7 +20,7 @@ const useAuth = () => {
 
   //Login
   const loginUser = (data) => {
-    const url = "https://booking-app-lmn3.onrender.com/api/v1/users/login";
+    const url = `${import.meta.env.VITE_API_URL}/users/login`;
 
     setError(null); // Reinicia el estado de error
     setIsLoading(true); // Reinicia el estado de carga

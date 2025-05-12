@@ -15,7 +15,7 @@ const HomePage = () => {
   const products = useSelector((states) => states.products);
   const dispatch = useDispatch();
   useEffect(() => {
-    const url = "https://booking-app-lmn3.onrender.com/api/v1/hotels";
+    const url = `${import.meta.env.VITE_API_URL}/hotels`;
     dispatch(getHotelsThunk(url));
   }, []);
 

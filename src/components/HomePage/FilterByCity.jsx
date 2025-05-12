@@ -12,12 +12,12 @@ const FilterByCity = ({
   const [cities, getCities] = useFetch();
   const dispatch = useDispatch();
   useEffect(() => {
-    const url = "https://booking-app-lmn3.onrender.com/api/v1/cities";
+    const url = `${import.meta.env.VITE_API_URL}/cities`;
     getCities(url);
   }, []);
 
   const handleCities = (cityId) => {
-    const url = `https://booking-app-lmn3.onrender.com/api/v1/hotels${
+    const url = `${import.meta.env.VITE_API_URL}/hotels${
       cityId ? `?cityId=${cityId}` : ""
     }`;
 

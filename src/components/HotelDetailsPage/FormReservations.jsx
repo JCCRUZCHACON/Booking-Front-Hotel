@@ -11,7 +11,7 @@ const FormReservations = ({ hotelId }) => {
   const navigate = useNavigate();
 
   const submit = (data) => {
-    const url = "https://booking-app-lmn3.onrender.com/api/v1/bookings";
+    const url = `${import.meta.env.VITE_API_URL}/bookings`;
     const objData = { ...data, hotelId };
     createBooking(url, objData, true);
     reset({

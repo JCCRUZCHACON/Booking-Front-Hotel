@@ -23,7 +23,7 @@ const BookCard = ({
       color: "var(--text-color)",
     }).then((result) => {
       if (result.isConfirmed) {
-        const url = `https://booking-app-lmn3.onrender.com/api/v1/bookings/${book.id}`;
+        const url = `${import.meta.env.VITE_API_URL}/bookings/${book.id}`;
         deleteReservation(url, book.id, true);
 
         Swal.fire({

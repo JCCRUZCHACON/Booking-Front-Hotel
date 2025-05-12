@@ -12,7 +12,7 @@ const ReservationsPage = () => {
   const [formIsOpen, setFormIsOpen] = useState(false);
 
   useEffect(() => {
-    const url = "https://booking-app-lmn3.onrender.com/api/v1/bookings";
+    const url = `${import.meta.env.VITE_API_URL}/bookings`;
     getReservations(url, true);
   }, []);
 
